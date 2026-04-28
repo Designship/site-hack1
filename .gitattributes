@@ -1,0 +1,22 @@
+# 1 MB 以上のメディア類は LFS で扱う(.claude/CLAUDE.md 参照)
+*.png   filter=lfs diff=lfs merge=lfs -text
+*.jpg   filter=lfs diff=lfs merge=lfs -text
+*.jpeg  filter=lfs diff=lfs merge=lfs -text
+*.webp  filter=lfs diff=lfs merge=lfs -text
+*.gif   filter=lfs diff=lfs merge=lfs -text
+*.mp4   filter=lfs diff=lfs merge=lfs -text
+*.webm  filter=lfs diff=lfs merge=lfs -text
+*.mov   filter=lfs diff=lfs merge=lfs -text
+*.woff2 filter=lfs diff=lfs merge=lfs -text
+*.woff  filter=lfs diff=lfs merge=lfs -text
+
+# Studio.design は拡張子なしの UUID 名で画像を配信するため、
+# サイズベースで弾く pre-commit hook (.git/hooks/pre-commit) を併用する。
+/assets/production-os-assets/assets/ef6c95bd-9ebe-4ba2-a129-a1f26df41a4a filter=lfs diff=lfs merge=lfs -text
+/assets/production-os-assets/assets/fa20aa09-b14d-40f0-af8a-0cea7209c423 filter=lfs diff=lfs merge=lfs -text
+/assets/studio-design-asset-files/projects/ogO0dwQ5O2/s-1413x1413_c1fa40fd-aa71-46eb-9430-95cd62056578.svg filter=lfs diff=lfs merge=lfs -text
+/assets/studio-design-asset-files/projects/ogO0dwQ5O2/s-2026x2026_6e526023-470c-49e7-b42d-66a933f0beef.svg filter=lfs diff=lfs merge=lfs -text
+/assets/studio-design-asset-files/projects/ogO0dwQ5O2/s-2047x1995_103e915b-fe3a-4258-b60e-3c1a57fbbca2.svg filter=lfs diff=lfs merge=lfs -text
+/assets/studio-design-asset-files/projects/ogO0dwQ5O2/s-2499x2247_b236171b-4bc6-49f0-a1a2-f52c3a0ae472.svg filter=lfs diff=lfs merge=lfs -text
+/assets/studio-design-asset-files/projects/ogO0dwQ5O2/s-2502x2658_8f735408-d394-4329-995f-0482116aa4c2.svg filter=lfs diff=lfs merge=lfs -text
+/assets/studio-design-asset-files/projects/ogO0dwQ5O2/s-2858x2980_a4185bc5-04be-4934-8df5-f280f76a2bb2.svg filter=lfs diff=lfs merge=lfs -text
