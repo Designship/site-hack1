@@ -2458,19 +2458,19 @@ sd-loop-box > .img {
 
 <!-- Free-font fallbacks for typesquare commercial Japanese fonts (auto-injected) -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@400;500;700;900&family=Shippori+Mincho:wght@400;500;700;800;900&family=Shippori+Mincho+B1:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@400;700&family=Shippori+Mincho:wght@400;500;700;800;900&family=Shippori+Mincho+B1:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root {
-    /* ゴシックMB101 B  → Zen Kaku Gothic New 700/900 */
-    --s-font-55b78b11: 'Zen Kaku Gothic New', system-ui, sans-serif !important;
-    /* ゴシックMB101 DB → Zen Kaku Gothic New 600 */
-    --s-font-af9889d8: 'Zen Kaku Gothic New', system-ui, sans-serif !important;
-    /* A1ゴシック B → Zen Maru Gothic 700 */
-    --s-font-bca8bdf2: 'Zen Maru Gothic', system-ui, sans-serif !important;
-    /* A1ゴシック M → Zen Maru Gothic 500 */
-    --s-font-868c47e9: 'Zen Maru Gothic', system-ui, sans-serif !important;
-    /* A1ゴシック R → Zen Maru Gothic 400 */
-    --s-font-3791a17e: 'Zen Maru Gothic', system-ui, sans-serif !important;
+    /* ゴシックMB101 B  → LINE Seed JP 700 */
+    --s-font-55b78b11: 'LINE Seed JP', system-ui, sans-serif !important;
+    /* ゴシックMB101 DB → LINE Seed JP 700 */
+    --s-font-af9889d8: 'LINE Seed JP', system-ui, sans-serif !important;
+    /* A1ゴシック B → LINE Seed JP 700 */
+    --s-font-bca8bdf2: 'LINE Seed JP', system-ui, sans-serif !important;
+    /* A1ゴシック M → LINE Seed JP 400 */
+    --s-font-868c47e9: 'LINE Seed JP', system-ui, sans-serif !important;
+    /* A1ゴシック R → LINE Seed JP 400 */
+    --s-font-3791a17e: 'LINE Seed JP', system-ui, sans-serif !important;
     /* A1明朝 B → Shippori Mincho 700 */
     --s-font-9e85c6d7: 'Shippori Mincho', serif !important;
     /* リュウミン R-KL → Shippori Mincho 400 */
@@ -2478,9 +2478,10 @@ sd-loop-box > .img {
     /* 凸版文久見出し明朝 EB → Shippori Mincho B1 800/900 */
     --s-font-599bad91: 'Shippori Mincho B1', serif !important;
   }
-  /* Some elements bind font directly by name, override those too */
-  [style*="ゴシックMB101 B"], [style*="ゴシックMB101 DB"] { font-family: 'Zen Kaku Gothic New', system-ui, sans-serif !important; }
-  [style*="A1ゴシック"]     { font-family: 'Zen Maru Gothic', system-ui, sans-serif !important; }
+  /* Direct font-family bindings */
+  [style*="ゴシックMB101"], [style*="A1ゴシック"] {
+    font-family: 'LINE Seed JP', system-ui, sans-serif !important;
+  }
   [style*="A1明朝"]         { font-family: 'Shippori Mincho', serif !important; }
   [style*="リュウミン"]      { font-family: 'Shippori Mincho', serif !important; }
   [style*="凸版文久見出し明朝"] { font-family: 'Shippori Mincho B1', serif !important; }
