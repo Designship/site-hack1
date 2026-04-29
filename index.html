@@ -2458,29 +2458,23 @@ sd-loop-box > .img {
 
 <!-- Free-font fallbacks for typesquare commercial Japanese fonts (auto-injected) -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@400;700&family=Shippori+Mincho:wght@400;500;700;800;900&family=Shippori+Mincho+B1:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@400;700&family=Noto+Sans+JP:wght@500;700;900&family=Shippori+Mincho:wght@400;500;700;800;900&family=Shippori+Mincho+B1:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root {
-    /* ゴシックMB101 B  → LINE Seed JP 700 */
-    --s-font-55b78b11: 'LINE Seed JP', system-ui, sans-serif !important;
-    /* ゴシックMB101 DB → LINE Seed JP 700 */
-    --s-font-af9889d8: 'LINE Seed JP', system-ui, sans-serif !important;
-    /* A1ゴシック B → LINE Seed JP 700 */
-    --s-font-bca8bdf2: 'LINE Seed JP', system-ui, sans-serif !important;
-    /* A1ゴシック M → LINE Seed JP 400 */
-    --s-font-868c47e9: 'LINE Seed JP', system-ui, sans-serif !important;
-    /* A1ゴシック R → LINE Seed JP 400 */
-    --s-font-3791a17e: 'LINE Seed JP', system-ui, sans-serif !important;
-    /* A1明朝 B → Shippori Mincho 700 */
+    /* ゴシック MB101 B / DB / A1ゴシック B / M / R → LINE Seed JP + Noto Sans JP fallback for weight >= 900 */
+    --s-font-55b78b11: 'LINE Seed JP', 'Noto Sans JP', system-ui, sans-serif !important;
+    --s-font-af9889d8: 'LINE Seed JP', 'Noto Sans JP', system-ui, sans-serif !important;
+    --s-font-bca8bdf2: 'LINE Seed JP', 'Noto Sans JP', system-ui, sans-serif !important;
+    --s-font-868c47e9: 'LINE Seed JP', 'Noto Sans JP', system-ui, sans-serif !important;
+    --s-font-3791a17e: 'LINE Seed JP', 'Noto Sans JP', system-ui, sans-serif !important;
+    /* Mincho faces */
     --s-font-9e85c6d7: 'Shippori Mincho', serif !important;
-    /* リュウミン R-KL → Shippori Mincho 400 */
     --s-font-21bdfc64: 'Shippori Mincho', serif !important;
-    /* 凸版文久見出し明朝 EB → Shippori Mincho B1 800/900 */
     --s-font-599bad91: 'Shippori Mincho B1', serif !important;
   }
-  /* Direct font-family bindings */
+  /* Direct font-family bindings (Studio sometimes inlines the commercial name) */
   [style*="ゴシックMB101"], [style*="A1ゴシック"] {
-    font-family: 'LINE Seed JP', system-ui, sans-serif !important;
+    font-family: 'LINE Seed JP', 'Noto Sans JP', system-ui, sans-serif !important;
   }
   [style*="A1明朝"]         { font-family: 'Shippori Mincho', serif !important; }
   [style*="リュウミン"]      { font-family: 'Shippori Mincho', serif !important; }
